@@ -32,11 +32,33 @@ main{
     position: absolute;
     top: auto;
     bottom: 0;
+    animation: moverArriba 1.5s ease-in;
+}
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moverAbajo{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 nav{
     margin-top: 45px;
     display: flex;
     height: 3vh;
+    animation: moverAbajo 1.5s ease-in;
 }
 .enlace{
     margin-right: 2.5vh;
@@ -60,6 +82,17 @@ a:hover{
     position: absolute;
     left: 30px;
     top: 20px;
+    animation: moverDerecha 1.5s ease-in;
+}
+@keyframes moverDerecha {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .loguis{
     height: 30px;
@@ -69,6 +102,17 @@ a:hover{
     right: 70px;
     left: auto;
     top: 40px;
+    animation: moverIzquierda 1.5s ease-in;
+}
+@keyframes moverIzquierda {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .imag{
     height: 15px;
