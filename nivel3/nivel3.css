@@ -1,0 +1,219 @@
+img{
+    width: 100%;
+}
+main{
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 420px 1fr 35px;
+    grid-gap: 10px;
+    height: auto;
+}
+.imagen{
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;  
+    position: relative;
+    justify-items: center;
+}
+.titulo{
+    font-family: títulos;
+    text-align: center;
+    color: rgba(245, 170, 65, 0.678);
+    font-size: 1.7em;
+    width: 70vw;
+    height: 18vh;
+    line-height: 13vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
+nav{
+    margin-top: 45px;
+    display: flex;
+    height: 3vh;
+}
+.enlace{
+    margin-right: 2.5vh;
+    margin-left: 2.5vh;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-family: Rubik;
+}
+a:hover{
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.loguis{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: absolute;
+    right: 70px;
+    left: auto;
+    top: 40px;
+}
+.imag{
+    height: 15px;
+    width: 20px;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    height: auto;
+    grid-gap: 10px;
+}
+.derecha{
+    background-color: rgb(192, 190, 190);
+    text-align: center;
+    padding: 10px;
+    font-family: Rubik;
+}
+.izquierda{
+    background-color: rgb(192, 190, 190);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 7vh;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    padding: 10px;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35vh 5vh 27vh 3vh;
+    grid-gap: 5px;
+    background-color: rgb(238, 236, 236);
+    padding: 10px;
+    position: relative;
+}
+.leer{
+    position:absolute;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 5px;
+    padding-left: 15px;   
+}
+.date{
+    position: relative;
+}
+.apartado{
+    height: 35vh;
+}
+.fecha{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 4px;
+    color: yellow;
+    font-family: Rubik;
+}
+.rosa{
+    font-family: Rubik;
+    color: white;
+    font-size: 1.2em;
+    background-color: rgb(220, 139, 152);
+    padding-top: 1.5vh;
+    padding-left: 1vh;
+}
+.texto{
+    font-family: Rubik;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    position: relative;
+}
+.text{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    overflow: hidden; 
+}
+.bottom{
+    font-family: Rubik;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+footer{
+    text-align: center;
+    background-color: rgb(233, 229, 229);
+    border-left: 5px solid gray;
+    border-right: 5px solid gray;
+    padding: 9px;
+    font-family: Rubik;
+}
+
+@media only screen and (max-width:800px){
+    main{
+        height: auto;
+    }
+    .titulo{
+        font-size: 1.3em;
+        line-height: 10vh;
+    }
+    .contenedor{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 25vh;
+    }
+    .izquierda{
+        grid-template-rows: 1fr 1fr 9vh;
+    }
+    nav{
+        margin-top: 100px;
+    }
+    .enlace{
+        margin-right: 1.4vh;
+        margin-left: 1.4vh;
+    }
+}
+@media only screen and (max-width:500px){
+    .titulo{
+        text-align: center;
+        color: orange;
+        font-size: 1.1em;
+        width: 80%;
+        height: 16vh;
+    }
+    .imagen{
+        background-size: cover;
+    }
+    .contenedor{
+        grid-template-rows: 1fr 29vh;
+    }
+    .izquierda{
+        display: block;
+    }
+    .contenido{
+        margin-bottom: 10px;
+    }
+    nav{
+        display: block;
+        text-align: center;
+    }
+}
+@font-face {
+    font-family: títulos;
+    src: url("../Fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+    font-family: Rubik;
+    src: url("../Fonts/Rubik/Rubik-VariableFont_wght.ttf") format('truetype');
+}
